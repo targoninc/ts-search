@@ -1,4 +1,4 @@
-import {SearchDb} from "./SearchDb.ts";
+import {SearchDb} from "./SearchDb";
 
 export interface SearchTableConfiguration<T> {
     tableName: string;

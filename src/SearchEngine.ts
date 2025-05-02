@@ -1,9 +1,9 @@
-import {SearchTableConfiguration} from "./SearchTableConfiguration.js";
-import {SearchResult} from "./SearchResult.js";
-import {SearchMode} from "./SearchMode.js";
-import {SearchDb} from "./SearchDb.js";
-import {SearchRequest} from "./SearchRequest.ts";
-import {Entity} from "./Entity.ts";
+import {SearchTableConfiguration} from "./SearchTableConfiguration";
+import {SearchResult} from "./SearchResult";
+import {SearchMode} from "./SearchMode";
+import {SearchDb} from "./SearchDb";
+import {SearchRequest} from "./SearchRequest";
+import {Entity} from "./Entity";
 
 export class SearchEngine {
     static async search<T extends Entity>(db: SearchDb, searchConfiguration: SearchTableConfiguration<T>, request: SearchRequest): Promise<SearchResult[]> {
